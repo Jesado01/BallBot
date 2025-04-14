@@ -42,9 +42,6 @@ The neural network-enhanced controller outperformed the classical PID by:
 
 A full analysis of these results is presented in the [scientific article](./docs/Articulo_cientifico.pdf) and [thesis document](./docs/TESIS_CORONADO.pdf).
 
-## 📊 Results
-The experimental comparison between a classical PID controller and a neural network-enhanced PID (PIDNN) showed clear performance differences in both static and disturbed conditions.
-
 | Metric                           | PID                     | PIDNN                   |
 |----------------------------------|--------------------------|--------------------------|
 | **Static Conditions**            |                          |                          |
@@ -65,3 +62,26 @@ The experimental comparison between a classical PID controller and a neural netw
 | General Stability               | Persistent oscillations | High stability          |
 | Adaptation to Disturbances      | Slow                    | Fast and precise        |
 | Energy Efficiency               | Medium                  | High                    |
+
+---
+
+## 🧠 Technologies Used
+
+- Classical PID (manual tuning + Ziegler-Nichols method)
+- Neural networks trained via supervised learning
+- Jetson Nano for real-time inference
+- Serial communication between Arduino and Jetson
+
+---
+
+## 🙋‍♂️ Author
+
+**Jesús Adolfo Coronado Brenes**  
+👨‍🎓 Mechatronics Engineering - UACJ  
+📧 adolfo.coronado05@gmail.com
+
+---
+
+## 📄 License
+
+MIT License – Free to use with proper attribution 🙌
