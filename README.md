@@ -42,20 +42,26 @@ The neural network-enhanced controller outperformed the classical PID by:
 
 A full analysis of these results is presented in the [scientific article](./docs/Articulo_cientifico.pdf) and [thesis document](./docs/TESIS_CORONADO.pdf).
 
-## 🗂️ Repository Structure
+## 📊 Results
+The experimental comparison between a classical PID controller and a neural network-enhanced PID (PIDNN) showed clear performance differences in both static and disturbed conditions.
 
-```plaintext
-├── arduino/
-│   ├── PID_Controller/
-│   └── PIDNN_Controller/
-├── python/
-│   └── NeuralNetwork_Model/
-├── docs/
-│   ├── Articulo_cientifico.pdf
-│   └── TESIS_CORONADO.pdf
-├── models/
-│   └── trained_nn_model.h5
-├── cad/
-│   ├── Platform_CAD_Files/
-│   └── Assembly_Images/
-└── README.md
+| Metric                           | PID                     | PIDNN                   |
+|----------------------------------|--------------------------|--------------------------|
+| **Static Conditions**            |                          |                          |
+| Overshoot (%)                   | 10%                     | 3%                      |
+| Steady-State Error (°)          | ±1.8                    | ±0.3                    |
+| Settling Time (s)               | 2.8                     | 1.2                     |
+| Max PWM                         | ±150                    | ±60                     |
+| General Stability               | Moderate oscillations   | High stability          |
+| Adaptation to System Changes    | Slow                    | Fast and stable         |
+| Computational Complexity        | Low                     | Medium                  |
+| Robustness (Static)             | Limited                 | High                    |
+|                                  |                          |                          |
+| **Under External Disturbance**  |                          |                          |
+| Overshoot (%)                   | 15%                     | 5%                      |
+| Steady-State Error (°)          | ±2.5                    | ±0.5                    |
+| Settling Time (s)               | 3.2                     | 1.5                     |
+| Max PWM                         | ±230                    | ±80                     |
+| General Stability               | Persistent oscillations | High stability          |
+| Adaptation to Disturbances      | Slow                    | Fast and precise        |
+| Energy Efficiency               | Medium                  | High                    |
